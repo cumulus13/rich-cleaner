@@ -1,0 +1,33 @@
+[build-system]
+requires = [
+    "setuptools>=61.0",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rich-cleaner"
+version = "0.0.2"
+authors = [
+    { name = "Hadi Cahyadi", email = "cumulus13@gmail.com" },
+]
+description = "A zero-dependency, production-ready tool and CLI to strip Rich markup natively."
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = []
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Topic :: Text Processing",
+    "Topic :: Text Processing :: Filters",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.urls]
+Homepage = "https://github.com/cumulus13/rich-cleaner"
+"Bug Tracker" = "https://github.com/cumulus13/rich-cleaner/issues"
+"Source Code" = "https://github.com/cumulus13/rich-cleaner"
+
+[project.scripts]
+rich-cleaner = "rich_cleaner.cli:main"
