@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "rich-cleaner"
-version = "0.0.2"
+version = "0.0.3"
 authors = [
     { name = "Hadi Cahyadi", email = "cumulus13@gmail.com" },
 ]
@@ -16,13 +16,15 @@ requires-python = ">=3.7"
 dependencies = []
 classifiers = [
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Intended Audience :: Developers",
     "Topic :: Text Processing",
     "Topic :: Text Processing :: Filters",
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
+
+[project.license]
+text = "MIT"
 
 [project.urls]
 Homepage = "https://github.com/cumulus13/rich-cleaner"
@@ -31,3 +33,11 @@ Homepage = "https://github.com/cumulus13/rich-cleaner"
 
 [project.scripts]
 rich-cleaner = "rich_cleaner.cli:main"
+
+[tool.setuptools.packages.find]
+include = [
+    "rich_cleaner*",
+]
+exclude = [
+    "gitignore_backup*",
+]
